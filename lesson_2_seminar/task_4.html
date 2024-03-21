@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity .5s;
+        }
+        .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+             opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Создать кнопку “Показать еще” при клике на которую появляется
+    контент под кнопкой, при повторном клике, контент необходимо
+    скрыть
+    2. Добавить анимацию появления текстового блока -->
+    <div id="app">
+        <button @click="show = !show">Показать еще</button>
+        <transition name="fade">
+            <p v-show="!show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad quos beatae earum doloribus dolor repellat, fugit et voluptatibus repellendus ullam. Dolorem quibusdam voluptatum illum, vel quam quos libero quod.                
+            </p>
+        </transition>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                show: true,
+            }
+        })
+    </script>
+</body>
+</html>

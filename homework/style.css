@@ -1,0 +1,122 @@
+html, body, div, img, a, hr, p, table, tr, td, h1, h2, h3,
+h4, h5, h6, ul, li, input, select, textarea, button, figure {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: none;
+    vertical-align: top;
+    transition: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: #292F36;
+}
+
+body {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-right {
+    display: flex;
+    gap: 30px;
+    color: #292F36;
+    font-family: "Jost";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner img {
+    border-radius: 40px;
+    position: absolute;
+}
+
+.banner-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 434px;
+    position: relative;
+    top: 183px;
+    left: 60px;
+
+}
+
+.banner-title {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 81.25px;
+    text-align: left;
+}
+
+.banner-content {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.banner-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    max-width: 220px;
+    height: 75px;
+    background: #292F36;
+    border-radius: 18px;
+    color: #ffffff;
+    font-family: "Jost";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    position: relative;
+}
+
+.banner-button-img {
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    bottom: 46px;
+}
